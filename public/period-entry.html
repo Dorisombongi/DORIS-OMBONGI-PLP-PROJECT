@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Period Dates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        /* Basic styling for the form and labels */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .date-inputs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .date-inputs input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex: 1;
+            margin: 0 5px; /* Space between inputs */
+        }
+        .form-container button {
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+        .form-container a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .form-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Enter Your Period Dates</h1>
+        <form id="periodForm">
+            <div class="date-inputs">
+                <label for="startDate">Start Date:</label>
+                <input type="text" id="startDate" name="startDate" required>
+            </div>
+            <div class="date-inputs">
+                <label for="endDate">End Date:</label>
+                <input type="text" id="endDate" name="endDate" required>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+        <a href="index.html">BACK TO DASHBOARD</a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="period-entry.js"></script>
+</body>
+</html>

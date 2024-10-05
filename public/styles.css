@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image.jpg'); /* Set the path to your image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calendar-container {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparency for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylish Login and Register Buttons */
+
+.auth-buttons {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+
+
+.links-container div {
+    margin-bottom: 20px; /* Space between each link */
+}
+
+.links-container div {
+    margin: 30px 0; /* Space between each link */
+}
+
+.days-until-period {
+    margin-top: 15px;
+    margin-bottom: 20px; /* Increase space below this section */
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.auth-button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.auth-button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #0066cc;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Calendar Navigation */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h2 {
+    color: #0066cc;
+    font-size: 20px;
+}
+
+.nav-button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #b50054;
+}
+
+.calendar {
+    width: 100%;
+    max-width: 320px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #0066cc;
+    padding: 5px;
+    text-align: center;
+    color: #333;
+    width: 40px;
+    height: 40px;
+}
+
+.calendar thead {
+    background-color: #0066cc;
+    color: white;
+}
+
+.calendar tbody td {
+    background-color: rgb(160, 224, 250);
+    transition: background-color 0.3s ease;
+}
+
+.calendar tbody td:hover {
+    background-color: #99e6ff;
+}
+
+.calendar td {
+    width: 14.28%; /* Equal distribution for 7 days */
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Make inputs and labels stretch to fill the width */
+    width: 100%; /* Ensure the form takes up the full width of its container */
+    margin-top: 20px;
+}
+
+.auth-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #0066cc;
+    display: block; /* Ensure the label stays on top of the input field */
+}
+
+.auth-form input {
+    width: 100%; /* Make input fields stretch to fit the container */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0066cc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Make sure padding is included in the width */
+}
+
+.auth-form button {
+    align-self: center; /* Center the button */
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Make the button take the full width for consistency */
+    
+}
+
+.auth-form button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for today's date */
+.today {
+    
+    font-weight: bold; /* Make it stand out */
+    border-radius: 50%; /* Circular highlight */
+    padding: 10px;
+    background-color: #f0f8ff;
+    font-weight: bold;
+}
+
+#daysUntilPeriodText {
+    color: #0066CC;          /* Sets the text color to pink */
+    font-size: 1.5em;     /* Makes the font size 1.5 times the base size, adjust as needed */
+    font-style: italic;
+    font-weight: bold;    /* Optional: makes the text bold */
+}
+
+/* Add this to your styles.css */
+
+ 
+
+.period-day {
+    background-color: #dd0d0d;
+}
+
+.period-form {
+    margin: 20px 0;
+}
+
+.period-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.period-form label {
+    margin: 5px 0;
+}
+
+.period-form input {
+    margin-bottom: 10px;
+}
+
+.period-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.period-form button:hover {
+    background-color: #45a049;
+}
+
+/* Additional styling for marking period dates */
+.period {
+    background-color: rgb(223, 11, 152);
+    color: #fff;
+    
+}
+
+.ovulation {
+    background-color: rgb(255, 228, 181); /* Light peach color for ovulation */
+    color: #333;
+    font-weight: bold;
+}
+
+
+.period::after {
+    content: '🩸'; /* This adds the blood drop symbol after the text */
+    color: rgb(255, 0, 0); /* Change the color to red */
+}
+
+
+.exercise-button {
+    background-color: rgb(255, 105, 180); /* Pink background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercise-button:hover {
+    background-color: rgb(255, 20, 147); /* Darker pink on hover */
+}
+
+.period-button {
+    background-color: rgb(255, 105, 180); /* Pink background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.period-button:hover {
+    background-color: rgb(255, 20, 147); /* Darker pink on hover */
+}
+
+
+
+
+.calender-button:hover {
+    background-color: rgb(255, 20, 147); /* Darker pink on hover */
+}
+
+.calender-button {
+    background-color: rgb(255, 105, 180); /* Pink background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+

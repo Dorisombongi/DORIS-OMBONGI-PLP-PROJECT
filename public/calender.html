@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        
+        
+        
+
+         <!-- Welcome Message -->
+         <h2 id="welcomeMessage"></h2>
+         
+        
+
+        <!-- Days Until Next Period Display -->
+        <div id="days-until-period" class="days-until-period">
+            <p id="daysUntilPeriodText">
+                <span id="daysUntilPeriodCount">0</span> days until next period
+            </p>
+        </div>
+
+
+
+        
+        
+        <!-- Month Navigation -->
+        <div class="calendar-header">
+            <button id="prevMonth" class="nav-button">&lt;</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth" class="nav-button">&gt;</button>
+        </div>
+
+        <!-- Calendar Table -->
+        <table class="calendar" id="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- Calendar dates will be populated here by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Legend for Symbols -->
+        <div class="legend">
+            <ul>
+                <li>🌸 = Ovulation</li>
+                <li>🌼 = Fertile</li>
+                <li>🩸 = On Period</li>
+            </ul>
+        </div>
+
+
+        <a href="index.html">DASHBOARD</a>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

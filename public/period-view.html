@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Period Dates</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for the period view page */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .view-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 5px; /* Reduced padding for smaller rows */
+            border: 1px solid #ccc;
+            text-align: center;
+            height: 20px; /* Set a specific height for the rows */
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .view-container a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .view-container a:hover {
+            text-decoration: underline;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end; /* Aligns the button to the right */
+            margin-bottom: 20px; /* Adds space below the button */
+        }
+
+        .delete-button {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .delete-button:hover {
+            background-color: #c82333;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="view-container">
+        <h1>Period Dates</h1>
+        <div class="button-container">
+            <button class="delete-button" id="deleteSelected">Delete Selected</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Cycle Length</th>
+                    <th>Period Length</th>
+                </tr>
+            </thead>
+            <tbody id="periodDatesTable">
+                <!-- Period dates will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+        
+        <a href="index.html">BACK TO DASHBOARD</a>
+    </div>
+
+    <script src="period-view.js"></script>
+
+    
+</body>
+</html>

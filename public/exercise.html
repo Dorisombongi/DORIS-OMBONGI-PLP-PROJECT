@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CycleSync - Period Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('image.jpg'); /* Set the path to your image here */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calendar-container {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #0066cc;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .days-until-period {
+            margin-bottom: 30px;
+        }
+
+        #daysUntilPeriodText {
+            color: rgb(233, 17, 143);
+            font-size: 1.5em;
+            font-weight: bold;
+            font-style: italic;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            width: 60px;
+            height: 60px;
+            line-height: 40px;
+            margin: 20px auto;
+        }
+
+        .symptoms {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow tabs to wrap */
+        }
+
+        .symptom {
+            background-color: rgb(255, 105, 180);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .symptom:hover {
+            background-color: rgb(255, 20, 147);
+        }
+
+        .auth-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .auth-button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .auth-button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="calendar-container">
+        
+        <h1>CycleSync</h1>
+        
+        <div class="symptoms">
+            <a href="bloating.html" class="symptom">BLOATING</a>
+            <a href="cramps.html" class="symptom">CRAMPS</a>
+            <a href="low-energy.html" class="symptom">LOW ENERGY</a>
+            <a href="moody.html" class="symptom">MOODY</a>
+        </div>
+        <a href="index.html">BACK TO DASHBOARD</a>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Optional background color */
+        }
+        img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto;
+        }
+        .redirect-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none; /* Remove underline from the link */
+        }
+        .redirect-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <img src="image1.jpg" alt="Description of the image">
+    <a href="index.html" class="redirect-button">BACK TO DASHBORD</a>
+</body>
+</html>
